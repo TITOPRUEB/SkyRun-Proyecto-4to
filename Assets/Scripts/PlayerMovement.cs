@@ -167,9 +167,13 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator Decrease(float value, float duration)
     {
         if (isStuned)
+        {
             wasStuned = true;
-        isStuned = true;
-        canMove = false;
+            isStuned = true;
+            canMove = false;
+
+        }
+         
 
         float delta = 0;
         delta = value / duration;
