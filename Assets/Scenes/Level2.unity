@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.73023504, g: 0.7889821, b: 0.8498593, a: 1}
+  m_IndirectSpecularColor: {r: 0.73024184, g: 0.78898203, b: 0.8498679, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!64 &75309536
 MeshCollider:
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!33 &82093475
 MeshFilter:
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!64 &107588240
 MeshCollider:
@@ -732,7 +732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!64 &140217037
 MeshCollider:
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!64 &435266756
 MeshCollider:
@@ -1258,7 +1258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!64 &522155909
 MeshCollider:
@@ -1613,6 +1613,7 @@ MonoBehaviour:
   Sensativity: 6
   ShowCursor: 0
   hasStarted: 0
+  Anim: {fileID: 0}
 --- !u!65 &1077128325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2139,7 +2140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!64 &1326102106
 MeshCollider:
@@ -2608,7 +2609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!64 &1677568480
 MeshCollider:
@@ -2788,7 +2789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!64 &1767545499
 MeshCollider:
@@ -3195,7 +3196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdffcc51f538bef4c8abd3b5bbb6ff17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 35
+  force: 55
   stunTime: 0.5
 --- !u!64 &1890029254
 MeshCollider:
