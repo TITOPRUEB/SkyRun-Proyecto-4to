@@ -136,7 +136,10 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
         }
-        
+        if (col.gameObject.tag == "Obstacle")
+        {
+            transform.position = new Vector3(1, 0.9f, -90);
+        }
     }
 
     private void MovePlayer()
