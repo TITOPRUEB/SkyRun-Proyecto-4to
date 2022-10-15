@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1515,7 +1515,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 8
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5992,7 +5992,7 @@ Transform:
   m_GameObject: {fileID: 740949424}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
   m_LocalPosition: {x: -0.016636133, y: 3.2218113, z: 45.8}
-  m_LocalScale: {x: 10, y: 5, z: 2.1}
+  m_LocalScale: {x: 20, y: 5, z: 1.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -6294,8 +6294,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 33.5899, y: 14.046219, z: 23.102493}
-  m_Center: {x: 1.2644062, y: 2.0539665, z: 11.051247}
+  m_Size: {x: 47.48036, y: 14.046219, z: 49.277027}
+  m_Center: {x: -1.7792492, y: 2.0539665, z: 18.041296}
 --- !u!1 &1102967940
 GameObject:
   m_ObjectHideFlags: 0
