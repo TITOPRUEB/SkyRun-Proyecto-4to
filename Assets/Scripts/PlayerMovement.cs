@@ -140,6 +140,11 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position = new Vector3(1, 0.9f, -90);
         }
+        //if (col.gameObject.tag == "Martillo")
+        //{
+
+        //}
+
     }
 
     private void MovePlayer()
