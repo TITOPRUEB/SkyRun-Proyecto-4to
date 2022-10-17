@@ -160,18 +160,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayerCamera()
     {
-        //xRot -= PlayerMouseInput.y * Sensativity;
+        xRot -= PlayerMouseInput.y * Sensativity;
 
-        //transform.Rotate(0f, PlayerMouseInput.x * Sensativity, 0f);
-        //PlayerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-
-        Vector3 v2 = v * PlayerCamera.transform.forward; //Vertical axis to which I want to move with respect to the camera
-        Vector3 h2 = h * PlayerCamera.transform.right; //Horizontal axis to which I want to move with respect to the camera
-        moveDir = (v2 + h2).normalized; //Global position to which I want to move in magnitude 1
-
-        RaycastHit hit;
+        transform.Rotate(0f, PlayerMouseInput.x * Sensativity, 0f);
+        PlayerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
+ 
     }
 
     public void HitPlayer(Vector3 velocityF, float time)
