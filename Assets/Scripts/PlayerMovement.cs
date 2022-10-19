@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     public bool hasStarted = false;
 
     public Animator Anim;
+    private Vector3 moveDir;
 
     // Start is called before the first frame update
     void Start()
@@ -136,7 +137,15 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
         }
-        
+        if (col.gameObject.tag == "Obstacle")
+        {
+            transform.position = new Vector3(1, 0.9f, -90);
+        }
+        //if (col.gameObject.tag == "Martillo")
+        //{
+
+        //}
+
     }
 
     private void MovePlayer()
@@ -155,6 +164,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Rotate(0f, PlayerMouseInput.x * Sensativity, 0f);
         PlayerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
+ 
     }
 
     public void HitPlayer(Vector3 velocityF, float time)

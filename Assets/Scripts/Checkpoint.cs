@@ -8,13 +8,13 @@ public class Checkpoint : MonoBehaviour
     {
         if (col.gameObject.name == "Deathwall1")
         {
-            transform.position = new Vector3(264.6f, -6.6f, 100.4f);
+            transform.position = new Vector3(287.24f, 0.174f, 0.027f);
             transform.eulerAngles = new Vector3(0, -90, 0);
         }
 
         if (col.gameObject.name == "Deathwall2")
         {
-            transform.position = new Vector3(50.3f, -12.3f, 94.9f);
+            transform.position = new Vector3(248.012f, -2.34f, -0.53f);
             transform.eulerAngles = new Vector3(0, -90, 0);
         }
         if (col.gameObject.name == "Deathwall3")
