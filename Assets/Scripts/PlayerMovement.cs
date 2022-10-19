@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         MovePlayer();
-        MovePlayerCamera();
+        //MovePlayerCamera();
     }
 
     private void FixedUpdate()
