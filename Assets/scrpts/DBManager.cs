@@ -5,7 +5,7 @@ using UnityEngine;
 public static class DBManager
 {
     public static string usuario;
-    public static int score;
+    public static float resultado;
     public static bool LoggedIn {get { return usuario != null; } }
 
     public static void LogOut()
