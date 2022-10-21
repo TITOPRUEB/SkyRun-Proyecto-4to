@@ -2476,7 +2476,7 @@ GameObject:
   - component: {fileID: 594037689}
   m_Layer: 0
   m_Name: Rotator (4)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8561,7 +8561,7 @@ GameObject:
   - component: {fileID: 874459759}
   m_Layer: 0
   m_Name: Rotator (6)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8700,7 +8700,7 @@ GameObject:
   - component: {fileID: 883085279}
   m_Layer: 0
   m_Name: Rotator (2)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9965,7 +9965,7 @@ GameObject:
   - component: {fileID: 1227473921}
   m_Layer: 0
   m_Name: Rotator (5)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10196,7 +10196,7 @@ GameObject:
   - component: {fileID: 1248673702}
   m_Layer: 0
   m_Name: Rotator (3)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11095,7 +11095,7 @@ GameObject:
   - component: {fileID: 1525901274}
   m_Layer: 0
   m_Name: Rotator (7)
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
