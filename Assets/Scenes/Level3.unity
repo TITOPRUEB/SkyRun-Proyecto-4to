@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.73024184, g: 0.78898203, b: 0.8498679, a: 1}
+  m_IndirectSpecularColor: {r: 0.73023504, g: 0.788984, b: 0.84986407, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8284,7 +8284,7 @@ GameObject:
   - component: {fileID: 831468404}
   m_Layer: 0
   m_Name: Gravity
-  m_TagString: Untagged
+  m_TagString: Gravity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9199,6 +9199,7 @@ GameObject:
   - component: {fileID: 1032881052}
   - component: {fileID: 1032881051}
   - component: {fileID: 1032881050}
+  - component: {fileID: 1032881054}
   m_Layer: 0
   m_Name: Plane (4)
   m_TagString: Obstacle
@@ -9279,6 +9280,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1032881054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032881049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac5b3ba93299e9340ad32dd7bf16288a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myMaterial: {fileID: 2100000, guid: 823f42826c695fa46afe92f8cfbb5a3a, type: 2}
 --- !u!1 &1095495659
 GameObject:
   m_ObjectHideFlags: 0
@@ -12314,6 +12332,7 @@ GameObject:
   - component: {fileID: 1677505682}
   - component: {fileID: 1677505681}
   - component: {fileID: 1677505680}
+  - component: {fileID: 1677505688}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -12476,6 +12495,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677505678}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1677505688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677505678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91605c89f7bb3a49ab19b326a8a5383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 0.65
+  rb: {fileID: 0}
 --- !u!1 &1699298018
 GameObject:
   m_ObjectHideFlags: 0
