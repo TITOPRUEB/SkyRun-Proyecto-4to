@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float currentMovementSpeed;
     public float movementSpeed;
+    private float rotateSpeed;
 
     public bool isGrounded;
 
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 PlayerMouseInput;
     private float xRot;
     public float jumpForce;
+    public bool hasJump;
 
 
     [SerializeField] private LayerMask FloorMask;
@@ -47,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator Anim;
     private Vector3 moveDir;
 
+    public float x, y = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,23 +67,46 @@ public class PlayerMovement : MonoBehaviour
 
 
         RB = GetComponent<Rigidbody>();
-    
+        Anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        hasJump = false;
         PlayerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         PlayerMouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            RB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-        }
+        //if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        //{
+        //    RB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        //    isGrounded = false;
+        //}
 
         MovePlayer();
         MovePlayerCamera();
+
+        if (hasJump)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Anim.SetBool("Salte", true);
+                RB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                isGrounded = false;
+            }
+            Anim.SetBool("tocoSuelo", true);
+        }
+        else
+        {
+            estoyCayendo();
+        }
+
+         x = Input.GetAxis("Horizontal");
+         y = Input.GetAxis("Vertical");
+
+         Anim.SetFloat("VelX", x);
+         Anim.SetFloat("VelY", y);
     }
 
     private void FixedUpdate()
@@ -88,19 +115,22 @@ public class PlayerMovement : MonoBehaviour
         {
             RB.AddForce(windZone.GetComponent<WindArea>().direction * windZone.GetComponent<WindArea>().strength);
         }
+
+        transform.Rotate(0, x * Time.deltaTime * rotateSpeed, 0);
+        transform.Translate(0, 0, y * Time.deltaTime * movementSpeed);
     }
 
-        void OnTriggerEnter(Collider collision)
+    void OnTriggerEnter(Collider collision)
     {
         
-        if (collision.gameObject.tag == "SpeedBoost")
-        {
+         if (collision.gameObject.tag == "SpeedBoost")
+         {
             Debug.Log("Estan en speedboost");
             movementSpeed = 50f;
             Speed = 50f;
             gravity = currentGravity;
             friction = currentFriction;
-        }
+         }
         if (collision.gameObject.tag == "Wind")
         {
             windZone = collision.gameObject;
@@ -154,17 +184,16 @@ public class PlayerMovement : MonoBehaviour
             return;
         if (!isGrounded)
             return;
-        Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput) * Speed;
-        RB.velocity = new Vector3(MoveVector.x, RB.velocity.y, MoveVector.z);
+        //Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput) * Speed;
+        //RB.velocity = new Vector3(MoveVector.x, RB.velocity.y, MoveVector.z);
     }
 
     private void MovePlayerCamera()
     {
         xRot -= PlayerMouseInput.y * Sensativity;
 
-        transform.Rotate(0f, PlayerMouseInput.x * Sensativity, 0f);
-        PlayerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
- 
+       transform.Rotate(0f, PlayerMouseInput.x * Sensativity, 0f);
+         PlayerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
     }
 
     public void HitPlayer(Vector3 velocityF, float time)
@@ -211,5 +240,11 @@ public class PlayerMovement : MonoBehaviour
             isStuned = false;
             canMove = true;
         }
+    }
+
+    public void estoyCayendo()
+    {
+        Anim.SetBool("Salte", false);
+        Anim.SetBool("tocoSuelo", false);
     }
 }

@@ -28,7 +28,7 @@ public class Gravity : MonoBehaviour
     {
         if(collision.gameObject.name == "Gravity")
         {
-            rb.mass = 1.96f;
+            rb.mass = 1;
         }
     }
 }

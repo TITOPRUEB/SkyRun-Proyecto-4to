@@ -15,6 +15,7 @@ TagManager:
   - Wind
   - Wall
   - Obstacle
+  - Gravity
   layers:
   - Default
   - TransparentFX

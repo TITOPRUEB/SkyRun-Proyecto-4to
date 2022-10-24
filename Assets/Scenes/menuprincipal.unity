@@ -347,7 +347,6 @@ GameObject:
   - component: {fileID: 210272924}
   - component: {fileID: 210272923}
   - component: {fileID: 210272922}
-  - component: {fileID: 210272925}
   m_Layer: 5
   m_Name: iniciar sesion
   m_TagString: Untagged
@@ -461,19 +460,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210272920}
   m_CullTransparentMesh: 0
---- !u!114 &210272925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210272920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19492ef7f7ca12e4faa3c033a29e2d46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerDisplay: {fileID: 0}
 --- !u!1 &405428979
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +562,7 @@ Camera:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -647,7 +633,6 @@ GameObject:
   - component: {fileID: 1272743180}
   - component: {fileID: 1272743179}
   - component: {fileID: 1272743178}
-  - component: {fileID: 1272743181}
   m_Layer: 5
   m_Name: jugar
   m_TagString: Untagged
@@ -761,19 +746,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272743176}
   m_CullTransparentMesh: 0
---- !u!114 &1272743181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272743176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19492ef7f7ca12e4faa3c033a29e2d46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerDisplay: {fileID: 0}
 --- !u!1 &1679820874
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +758,6 @@ GameObject:
   - component: {fileID: 1679820878}
   - component: {fileID: 1679820877}
   - component: {fileID: 1679820876}
-  - component: {fileID: 1679820879}
   m_Layer: 5
   m_Name: registrarse
   m_TagString: Untagged
@@ -900,19 +871,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679820874}
   m_CullTransparentMesh: 0
---- !u!114 &1679820879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679820874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19492ef7f7ca12e4faa3c033a29e2d46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerDisplay: {fileID: 0}
 --- !u!1 &2136412630
 GameObject:
   m_ObjectHideFlags: 0
