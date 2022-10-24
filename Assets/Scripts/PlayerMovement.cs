@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         RB = GetComponent<Rigidbody>();
-        Anim = GetComponent<Animator>();
+      
 
     }
 
