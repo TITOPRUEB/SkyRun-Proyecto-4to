@@ -74,15 +74,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hasJump = false;
-        PlayerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         PlayerMouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-
-        //if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        //{
-        //    RB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        //    isGrounded = false;
-        //}
 
         MovePlayer();
         MovePlayerCamera();
@@ -192,8 +184,8 @@ public class PlayerMovement : MonoBehaviour
     {
         xRot -= PlayerMouseInput.y * Sensativity;
 
-       transform.Rotate(0f, PlayerMouseInput.x * Sensativity, 0f);
-         PlayerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
+        transform.Rotate(0f, PlayerMouseInput.x * Sensativity, 0f);
+        PlayerCamera.transform.localRotation = Quaternion.Euler(xRot, 0f, 0f);
     }
 
     public void HitPlayer(Vector3 velocityF, float time)
