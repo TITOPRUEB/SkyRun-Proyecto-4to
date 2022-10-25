@@ -176,8 +176,15 @@ public class PlayerMovement : MonoBehaviour
             return;
         if (!isGrounded)
             return;
-        //Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput) * Speed;
-        //RB.velocity = new Vector3(MoveVector.x, RB.velocity.y, MoveVector.z);
+ 
+        Vector3 transformPosition = new Vector3(x * movementSpeed * Time.deltaTime, 0, y * movementSpeed * Time.deltaTime);
+        transform.position += transformPosition;
+
+        
+
+        Vector3 direction = Vector3.forward * y + Vector3.right * x;
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotateSpeed * Time.deltaTime);
+     
     }
 
     private void MovePlayerCamera()
