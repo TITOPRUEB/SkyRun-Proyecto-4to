@@ -7,9 +7,14 @@ public class GameTimerText : MonoBehaviour
 {
     public Text gameTimerText;
     public float gameTimer = 0f;
+    
 
     public bool Started = false;
 
+    public void Start()
+    {
+        gameTimerText = GetComponent<Text>();
+    }
     // Update is called once per frame
     void Update()
     {

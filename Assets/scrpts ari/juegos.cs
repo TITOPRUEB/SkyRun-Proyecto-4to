@@ -11,27 +11,30 @@ public class juegos : MonoBehaviour
     public float record;
     public Text recordDisplay;
     public float puntajeactual;
+    public string nombreEscena;
 
     private void Awake()
     {
-        if(DBManager.usuario == null)
+        nombreEscena = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (DBManager.usuario == null)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
 
         nombredisplay.text = "Player: " + DBManager.usuario;
-        puntosdisplay.text = "Score: 0";
-        recordDisplay.text = "Record: " + DBManager.resultado;
-        record = DBManager.resultado;
+        puntosdisplay.text = "score:0";
+        recordDisplay.text = "Record: " + DBManager.record;
+        DBManager.level = nombreEscena;
+        record = DBManager.record;
     }
 
     public void CallSaveData()
     {
         if(puntajeactual > record)
         {
-            DBManager.resultado = puntajeactual;
+            DBManager.record = puntajeactual;
         }
-        
+        DBManager.record = puntajeactual;
         StartCoroutine(SavePlayerData());
     }
 
@@ -39,7 +42,8 @@ public class juegos : MonoBehaviour
     {
         WWWForm form = new WWWForm();
         form.AddField("usuario", DBManager.usuario);
-        form.AddField("resultado", DBManager.resultado.ToString());
+        form.AddField("resultado", DBManager.record.ToString());
+        form.AddField("level", DBManager.level.ToString());
 
         WWW www = new WWW("http://localhost/sqlconnect/savedata.php", form);
         yield return www;

@@ -6,6 +6,17 @@ using UnityEngine.SceneManagement;
 public class CambioNivel : MonoBehaviour
 {
     public bool ShowCursor = false;
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if (ShowCursor == false)
+            {
+                Cursor.visible = true;
+            }
+        } 
+    }
 
     void OnTriggerEnter(Collider other)
     {
