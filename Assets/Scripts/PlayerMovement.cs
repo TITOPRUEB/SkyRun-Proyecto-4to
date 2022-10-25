@@ -74,8 +74,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hasJump = false;
-        PlayerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         PlayerMouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
         MovePlayer();
@@ -178,8 +176,8 @@ public class PlayerMovement : MonoBehaviour
             return;
         if (!isGrounded)
             return;
-        Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput) * Speed;
-        RB.velocity = new Vector3(MoveVector.x, RB.velocity.y, MoveVector.z);
+        //Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput) * Speed;
+        //RB.velocity = new Vector3(MoveVector.x, RB.velocity.y, MoveVector.z);
     }
 
     private void MovePlayerCamera()
