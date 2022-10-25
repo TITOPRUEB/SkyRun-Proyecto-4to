@@ -14,31 +14,31 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: tocoSuelo
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Blend
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: VelX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: VelY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -61,7 +61,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ad16986562b7fc34bad8dc133b885190, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5de1323df88b9524f9fb9d41435ee6b5, type: 3}
     m_Threshold: -1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -69,7 +69,7 @@ BlendTree:
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0a6a8924eaf016244baf5439b17402f4, type: 2}
+    m_Motion: {fileID: 7400000, guid: 3bfc5ed2c27b4264db7750cf53b49ccc, type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -77,7 +77,7 @@ BlendTree:
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0a6a8924eaf016244baf5439b17402f4, type: 2}
+    m_Motion: {fileID: 7400000, guid: 3bfc5ed2c27b4264db7750cf53b49ccc, type: 3}
     m_Threshold: 3
     m_Position: {x: 0, y: -1}
     m_TimeScale: -1
@@ -85,7 +85,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c541879f5ccef4748b87736ce1230134, type: 2}
+    m_Motion: {fileID: 7400000, guid: 6dde06f6100702349a2665eaf2b8c162, type: 3}
     m_Threshold: 5
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -93,7 +93,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 1
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c541879f5ccef4748b87736ce1230134, type: 2}
+    m_Motion: {fileID: 7400000, guid: 6dde06f6100702349a2665eaf2b8c162, type: 3}
     m_Threshold: 7
     m_Position: {x: -1, y: 0}
     m_TimeScale: -1
@@ -101,7 +101,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c541879f5ccef4748b87736ce1230134, type: 2}
+    m_Motion: {fileID: 7400000, guid: 6dde06f6100702349a2665eaf2b8c162, type: 3}
     m_Threshold: 9
     m_Position: {x: 1, y: -1}
     m_TimeScale: 1
@@ -109,7 +109,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 1
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c541879f5ccef4748b87736ce1230134, type: 2}
+    m_Motion: {fileID: 7400000, guid: 6dde06f6100702349a2665eaf2b8c162, type: 3}
     m_Threshold: 11
     m_Position: {x: -1, y: -1}
     m_TimeScale: 1
@@ -241,7 +241,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2e1b10732700a5241a59994d744e121d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9799912d5e59b674ca7817576f7abf2b, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -296,7 +296,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b86dfad5b312bbb42980cf4d4c53039b, type: 2}
+  m_Motion: {fileID: 7400000, guid: f2558f5b2f7d8c34f97156e4dbb281bc, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -316,7 +316,7 @@ AnimatorStateMachine:
     m_Position: {x: 372, y: 300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102159920425830528}
-    m_Position: {x: 204, y: 204, z: 0}
+    m_Position: {x: 144, y: 216, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102834881807269290}
     m_Position: {x: 554.46936, y: 214.07422, z: 0}
