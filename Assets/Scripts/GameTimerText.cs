@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,23 +7,20 @@ using UnityEngine.UI;
 public class GameTimerText : MonoBehaviour
 {
     public Text gameTimerText;
-    public float gameTimer = 0f;
-    
-    
-
+    public static float gameTimer = 0f;
     public bool Started = false;
 
     public void Start()
     {
-        gameTimerText = GetComponent<Text>();
-    }
+        ResetTime();
+    }    
+
     // Update is called once per frame
     void Update()
     {
         if (Started)
         {
             gameTimer += Time.deltaTime;
-
             int segundos = (int)(gameTimer % 60);
             int minutos = (int)(gameTimer / 60) % 60;
             int horas = (int)(gameTimer / 3600) % 24;
@@ -31,5 +29,10 @@ public class GameTimerText : MonoBehaviour
 
             gameTimerText.text = timerString;
         }
+    }
+
+    public void ResetTime()
+    {
+        gameTimer = 0;
     }
 }

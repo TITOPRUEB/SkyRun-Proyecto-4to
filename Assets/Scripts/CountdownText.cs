@@ -7,7 +7,6 @@ public class CountdownText : MonoBehaviour
 {
     public Text countdownText;
 
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(CountDown());
@@ -15,6 +14,8 @@ public class CountdownText : MonoBehaviour
 
     IEnumerator CountDown()
     {
+        GameTimerText Gtt = FindObjectOfType<GameTimerText>();
+        Gtt.gameTimerText.gameObject.SetActive(false);
         countdownText.text = "3";
         yield return new WaitForSeconds(1f);
         countdownText.text = "2";
@@ -24,14 +25,10 @@ public class CountdownText : MonoBehaviour
         countdownText.text = "GO!";
         yield return new WaitForSeconds(1f);
         countdownText.gameObject.SetActive(false);
-
         FindObjectOfType<PlayerMovement>().hasStarted = true;
-        FindObjectOfType<GameTimerText>().Started = true;
-        //FindObjectOfType<PlayerMov3Level>().hasStarted = true;
+        Gtt.Started = true;
+        Gtt.ResetTime();
+        Gtt.gameTimerText.gameObject.SetActive(true);
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

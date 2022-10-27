@@ -13,6 +13,6 @@ public class TimeDisplayer : MonoBehaviour
         display = GetComponent<Text>();
         GMTXT2 = FindObjectOfType<GameTimerText>();
         if(GMTXT2)
-            display.text = "Tu tiempo fue de: " + GameTimerText.gameTimer+ " segundos";
+            display.text = "Tu tiempo fue de: " + GameTimerText.gameTimer + " segundos";
     }
 }

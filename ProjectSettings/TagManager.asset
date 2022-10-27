@@ -16,6 +16,7 @@ TagManager:
   - Wall
   - Obstacle
   - Gravity
+  - TimeText
   layers:
   - Default
   - TransparentFX

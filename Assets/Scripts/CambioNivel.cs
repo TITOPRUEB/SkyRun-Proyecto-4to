@@ -5,16 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class CambioNivel : MonoBehaviour
 {
+    public juegos juegosScript;
     public bool ShowCursor = false;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            if (ShowCursor == false)
-            {
-                Cursor.visible = true;
-            }
+            LoadNextScene();
         } 
     }
 
@@ -22,12 +20,21 @@ public class CambioNivel : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            if (ShowCursor == false)
-            {
-                Cursor.visible = true;
-            }
+            LoadNextScene();
         }
 
+    }
+
+    void LoadNextScene()
+    {
+        juegosScript = FindObjectOfType<juegos>();
+        juegosScript.puntajeactual = GameTimerText.gameTimer;
+        juegosScript.CallSaveData();
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (ShowCursor == false)
+        {
+            Cursor.visible = true;
+        }
     }
 }
