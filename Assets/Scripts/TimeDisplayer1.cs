@@ -16,8 +16,8 @@ public class TimeDisplayer1 : MonoBehaviour
         juegosScript = FindObjectOfType<juegos>();
         if (GMTXT1)
         {
-            display.text = "Tu tiempo fue de: " + GMTXT1.gameTimer + " segundos";
-            juegosScript.puntajeactual = GMTXT1.gameTimer;
+            display.text = "Tu tiempo fue de: " + GameTimerText.gameTimer + " segundos";
+            juegosScript.puntajeactual = GameTimerText.gameTimer;
             juegosScript.CallSaveData();
         }
     }
