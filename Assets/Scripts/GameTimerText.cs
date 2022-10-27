@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameTimerText : MonoBehaviour
 {
     public Text gameTimerText;
-    public static float gameTimer = 0f;
+    public float gameTimer = 0f;
     
     
 
