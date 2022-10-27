@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class GameTimerText : MonoBehaviour
 {
     public Text gameTimerText;
-    public float gameTimer = 0f;
+    public static float gameTimer = 0f;
+    
     
 
     public bool Started = false;
