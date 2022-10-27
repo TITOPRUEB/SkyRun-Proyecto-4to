@@ -10884,7 +10884,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTimerText: {fileID: 1804541874}
-  gameTimer: 0
   Started: 0
 --- !u!4 &1102967942
 Transform:
@@ -14026,7 +14025,6 @@ GameObject:
   - component: {fileID: 1627017779}
   - component: {fileID: 1627017778}
   - component: {fileID: 1627017777}
-  - component: {fileID: 1627017786}
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Player
@@ -14194,18 +14192,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1627017786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627017776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 494033aea0adbd54bb6881cde39717de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1636359666
 GameObject:
   m_ObjectHideFlags: 0
