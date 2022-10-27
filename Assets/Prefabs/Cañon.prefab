@@ -1530,7 +1530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FrutasInicio: []
-  FrutaVelocidad: 15
+  FrutaVelocidad: 85
   Frutas: {fileID: 0}
   apuntadorTR: {fileID: 3046758167436842623}
 --- !u!1 &3046758167996053491
