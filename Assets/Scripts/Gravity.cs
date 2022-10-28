@@ -17,7 +17,7 @@ public class Gravity : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.name == "Gravity")
+        if(col.gameObject.tag == "Gravity")
         {
             rb.mass = mass;
         }
@@ -26,9 +26,10 @@ public class Gravity : MonoBehaviour
 
     void OnTriggerExit(Collider collision)
     {
-        if(collision.gameObject.name == "Gravity")
+        if(collision.gameObject.tag == "Gravity")
         {
             rb.mass = 1;
+
         }
     }
 }
