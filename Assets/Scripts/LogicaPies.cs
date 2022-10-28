@@ -22,7 +22,7 @@ public class LogicaPies : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         movimientoPlayer.hasJump = true;
-        if (other.gameObject.name == "Gravity")
+        if (other.gameObject.tag == "Gravity")
         {
             rb.mass = mass;
         }
@@ -32,7 +32,7 @@ public class LogicaPies : MonoBehaviour
     {
         movimientoPlayer.hasJump = false;
 
-        if (other.gameObject.name == "Gravity")
+        if (other.gameObject.tag == "Gravity")
         {
             rb.mass = 1;
 
