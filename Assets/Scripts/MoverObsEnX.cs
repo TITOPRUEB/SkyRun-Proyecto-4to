@@ -24,11 +24,11 @@ public class MoverObsEnX : MonoBehaviour
     {
         if (toRight)
         {
-            transform.position += new Vector3(0, 0, xSpeed);
+            transform.position += new Vector3(xSpeed, 0, 0);
         }
         else
         {
-            transform.position -= new Vector3(0, 0, xSpeed);
+            transform.position -= new Vector3(xSpeed, 0, 0);
         }
         if(transform.position.z >= xRightLimit)
         {
