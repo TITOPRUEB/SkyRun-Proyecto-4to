@@ -3230,6 +3230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc3872f4ba24c049b5d237209fe4eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  juegosScript: {fileID: 0}
   ShowCursor: 0
 --- !u!65 &634372038
 BoxCollider:
@@ -10835,7 +10836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100157942}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 3.1171649, z: -208.4}
+  m_LocalPosition: {x: 1.2, y: 3.1171649, z: -206.6}
   m_LocalScale: {x: 1.9375, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14635,6 +14636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc3872f4ba24c049b5d237209fe4eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  juegosScript: {fileID: 0}
   ShowCursor: 0
 --- !u!65 &1714691736
 BoxCollider:

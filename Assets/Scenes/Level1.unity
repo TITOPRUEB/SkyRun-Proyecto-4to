@@ -7248,6 +7248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc3872f4ba24c049b5d237209fe4eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  juegosScript: {fileID: 0}
   ShowCursor: 0
 --- !u!64 &2004617976
 MeshCollider:
