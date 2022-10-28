@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMotor : MonoBehaviour
 {
-    private CharacterController controller;
+    private PlayerMovement controller;
 
     private float verticalVelocity;
     private float gravity = 14.0f;
@@ -13,13 +13,14 @@ public class PlayerMotor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        controller = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isGrounded)
+        if (controller.isGrounded)
+
         {
             verticalVelocity = -gravity * Time.deltaTime;
             if (Input.GetKeyDown(KeyCode.Space))
@@ -28,11 +29,17 @@ public class PlayerMotor : MonoBehaviour
             }
             else
             {
-                verticalVelocity = -gravity * Time.deltaTime;
+                verticalVelocity -= gravity * Time.deltaTime;
             }
 
-            Vector3 moveVector = new Vector3(0, verticalVelocity, 0);
-            controller.Move(moveVector * Time.deltaTime);
+            Vector3 moveVector = Vector3.zero;
+            moveVector.x = Input.GetAxis("Horizontal") * 5;
+            moveVector.y = verticalVelocity;
+            moveVector.z = Input.GetAxis("Vertical") * 5;
+            //controller.(moveVector * Time.deltaTime);
+
         }
+
+
     }
 }
