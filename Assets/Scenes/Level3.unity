@@ -539,7 +539,7 @@ HingeJoint:
   m_GameObject: {fileID: 103770589}
   m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5000001, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: -4.2, y: 1.2, z: 9.672384}
   m_UseSpring: 0
@@ -11127,7 +11127,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 216.5, y: 122, z: 0}
+  m_ConnectedAnchor: {x: 184, y: 103.5, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -14499,6 +14499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461ac76cbb501a64991c0bdec7845ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mass: 0
+  rb: {fileID: 0}
   movimientoPlayer: {fileID: 1627017781}
 --- !u!136 &1783905914
 CapsuleCollider:
