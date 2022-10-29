@@ -22,6 +22,12 @@ public class Checkpoint : MonoBehaviour
             transform.position = new Vector3(42.6f, -6.1f, 0f);
             transform.eulerAngles = new Vector3(0, -90, 0);
         }
+
+        if (col.gameObject.tag == "Deathwall")
+        {
+            transform.position = new Vector3(0f, 0f, -226.5f);
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
     }
 }
 
