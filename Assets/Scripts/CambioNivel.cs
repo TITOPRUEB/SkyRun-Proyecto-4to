@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CambioNivel : MonoBehaviour
 {
-    public juegos juegosScript;
+    //public juegos juegosScript;
     public bool ShowCursor = false;
 
     void Update()
@@ -27,9 +27,9 @@ public class CambioNivel : MonoBehaviour
 
     void LoadNextScene()
     {
-        juegosScript = FindObjectOfType<juegos>();
-        juegosScript.puntajeactual = GameTimerText.gameTimer;
-        juegosScript.CallSaveData();
+        //juegosScript = FindObjectOfType<juegos>();
+        //juegosScript.puntajeactual = GameTimerText.gameTimer;
+        //juegosScript.CallSaveData();
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         if (ShowCursor == false)

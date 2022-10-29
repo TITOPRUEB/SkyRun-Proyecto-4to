@@ -562,12 +562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a98e65e60e035b4983712afecf65519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombredisplay: {fileID: 1155425655}
-  puntosdisplay: {fileID: 587419471}
-  record: 0
-  recordDisplay: {fileID: 601972450}
-  puntajeactual: 0
-  nombreEscena: 
 --- !u!1 &149506023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,7 +4766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c571ccbda9569e44f866c5740e9808e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c571ccbda9569e44f866c5740e9808e2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7290,7 +7284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc3872f4ba24c049b5d237209fe4eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  juegosScript: {fileID: 0}
   ShowCursor: 0
 --- !u!64 &2004617976
 MeshCollider:
